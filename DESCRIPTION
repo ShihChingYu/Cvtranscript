@@ -16,4 +16,7 @@ Imports:
     stringr (>= 1.4.0),
     IRanges (>= 2.6.1),
     utils
+Suggests:
+    EnsDb.Hsapiens.v86 (>= 2.99.0),
+    BSgenome.Hsapiens.NCBI.GRCh38
 RoxygenNote: 7.1.1
