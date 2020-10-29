@@ -10,7 +10,6 @@ License: GPL-2
 Encoding: UTF-8
 LazyData: true
 Imports:
-    EnsDb.Hsapiens.v86 (>= 2.99.0),
     ensembldb (>= 2.10.2),
     biomaRt (>= 2.45.8),
     stringr (>= 1.4.0),
