@@ -1,8 +1,8 @@
-Package: CvtransctiptID
+Package: Cvtransctript
 Type: Package
 Title: This Package is Used for Converting Transcript IDs
 Version: 0.1.0
-Date: 2020-10-27
+Date: 2020-10-30
 Author: Ching-Yu Shih
 Maintainer: Ching-Yu Shih <cyshih30@gmail.com>
 Description: Demonstrate how to convert transcript ID between different databases.
