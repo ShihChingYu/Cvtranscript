@@ -1,6 +1,6 @@
-Package: Cvtransctript
+Package: Cvtranscript
 Type: Package
-Title: This Package is Used for Converting Transcript IDs
+Title: This Package is Used for Converting Transcript IDs between NCBI RefSeq and Ensembl and Mapping to the genome.
 Version: 0.1.0
 Date: 2020-10-30
 Author: Ching-Yu Shih

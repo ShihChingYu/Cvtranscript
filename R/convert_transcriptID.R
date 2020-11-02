@@ -25,7 +25,7 @@ convert_transcriptID <- function(dat, db){
   dat$alt<-stringr::str_sub(dat$Nucleotide_changes, -1, -1)
   dat<-dat[order(dat$Transcript_version, dat$start_loc),]
 
-  #Mapping protein coordinates to transcript coordinates
+  #converting NCBI RefSeq transcript ID to Ensembl transcript ID
   ensembl <- biomaRt::useEnsembl(biomart = "ensembl", dataset = "hsapiens_gene_ensembl")
   dat_ensmbl_id<-biomaRt::getBM(attributes=c("refseq_mrna", "ensembl_transcript_id", "hgnc_symbol"), filters = "refseq_mrna",
                        values = dat$Transcript_version, mart= ensembl, uniqueRows = FALSE)
@@ -33,7 +33,7 @@ convert_transcriptID <- function(dat, db){
   newvalues <- factor(dat_ensmbl_id$ensembl_transcript_id)
   dat$em_id <- newvalues[ match(dat$Transcript_version, dat_ensmbl_id$refseq_mrna) ]
 
-  #search SNP
+  #mapping to the genome of the Ensembl transcript
   loc<-dat$start_loc
   tx_name<-dat$em_id
   cds <- IRanges::IRanges(start = loc, width = 1, name = tx_name)
