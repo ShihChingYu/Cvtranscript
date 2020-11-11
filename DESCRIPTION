@@ -1,11 +1,11 @@
-Package: Cvtranscript
+Package: MRAT
 Type: Package
-Title: This Package is Used for Converting Transcript IDs between NCBI RefSeq and Ensembl and Mapping to the genome.
+Title: Messenger RNA annotation tool. 
 Version: 0.1.0
 Date: 2020-10-30
 Author: Ching-Yu Shih
 Maintainer: Ching-Yu Shih <cyshih30@gmail.com>
-Description: Demonstrate how to convert transcript ID between different databases.
+Description: This Package is Used for Converting Transcript IDs between NCBI RefSeq and Ensembl and Mapping position to the genome.
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
@@ -13,8 +13,7 @@ Imports:
     stringr (>= 1.4.0),
     utils
 Suggests:
-    EnsDb.Hsapiens.v86 (>= 2.99.0),
-    BSgenome.Hsapiens.NCBI.GRCh38,
+    EnsDb.Hsapiens.v75 (>= 2.99.0),
     ensembldb (>= 2.10.2),
     biomaRt (>= 2.45.8),
     IRanges (>= 2.6.1)
